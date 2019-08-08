@@ -115,7 +115,7 @@ html {
 body {
   font-family: 'Lora', serif;
   font-size: 1em;
-  color: #e2d3ed;  /* need to change to white after background is in place */
+  color: #ffffff;
   text-align: left;
   }
 
@@ -124,7 +124,7 @@ ul, ol {
   }
 
 a {
-  color: #e2d3ed;  /* need to change to white after after background is in place */
+  color: #ffffff;
   text-decoration: none;
   }
 
@@ -172,10 +172,13 @@ address p {
 
 /* header styles */
 
-
 header {
   background: url('../img/hero-img.jpg');
   background-size: cover;
+}
+
+header {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,10 +220,79 @@ header nav ul li {
 }
 
 
+.main-statement span {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.9em;
+}
 
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background: linear-gradient(to left, #bb5759 0%, #fc997a 100%);
+  line-height: 
+}
 
+#about h2 {
+  border: 5px solid #ffffff;
+}
 
+.lead-statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
+.lead-statement h2 {
+  color: #fc997a;
+  border: 5px solid #fc997a;
+  font-family: 'Great Vibes',
+  cursive;
+  text-align: center;
+}
+
+#specialities {
+  background: linear-gradient(to left, #bb5759 0%, #fc997a 100%);
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#specialities h2 {
+ color: #ffffff;
+ border: 5px solid #ffffff;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000; 
+}
+
+#contact p a {
+  color: #bb5759;
+  font-size: 1.3125em;
+  flex-flow: row;
+}
+
+div.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f59d89;
+}
 
 
 
