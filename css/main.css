@@ -230,7 +230,8 @@ header nav ul li {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: linear-gradient(to left, #bb5759 0%, #fc997a 100%);
+  background-color: #fc997a;
+  /*background: linear-gradient(to left, #bb5759 0%, #fc997a 100%);*/
   line-height: 
 }
 
@@ -280,7 +281,7 @@ header nav ul li {
 
 div.social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
   border-radius: 50%;
   width: 40px;
@@ -288,10 +289,28 @@ div.social-icons {
 }
 
 footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
   background-color: #f59d89;
+  text-align: center;
+}
+
+footer .content-wrapper {
+    margin: 50px 0;
+}
+
+footer.social-icons {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 
