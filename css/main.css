@@ -175,10 +175,6 @@ address p {
 header {
   background: url('../img/hero-img.jpg');
   background-size: cover;
-}
-
-header {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,7 +251,7 @@ header nav ul li {
 }
 
 #specialities {
-  background: linear-gradient(to left, #bb5759 0%, #fc997a 100%);
+  background: linear-gradient(to left, #bb5759 0%, #f29580 100%);
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
