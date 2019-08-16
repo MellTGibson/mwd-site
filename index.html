@@ -54,22 +54,28 @@
     <header>
       <div class="content-wrapper">
         <figure>
-          <a href="index.html"><img src="img/mwd-logo.png" alt="mellony web designs logo"></a>
+          <a href="index.html" class="active"><img src="img/mwd-logo.png" alt="mellony web designs logo"></a>
         </figure>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-          <nav>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>  
-              <li><a href="portfolio/index.html" target="_blank">Portfolio</a></li>
-              <li><a href="#contact/index.html" target="_blank">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="main-statement">
-            <span>Hi,</span> I'm a developer who loves to create beautiful things using <span>clean &
-            elegant</span> code.</h1>
+  <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active"></a>
+          <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a> 
+            <a href="portfolio/index.html" target="_blank">Portfolio</a>
+            <a href="contact/index.html" target="_blank">Contact</a>
           </div>
-      </div>       
+ <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="main-statement">
+          <span>Hi,</span><br> I'm a developer who loves to create beautiful<br> things using <span>clean &
+          elegant</span> code.</h1>
+        </div>
+      </div>      
     </header> <!--end of header area -->
    
 <!--BEGINNING OF MAIN AREA-->
@@ -101,41 +107,41 @@
         </aside>  <!--end of lead statement area -->
 
   <!--SPECIALTIES AREA-->
-        <section id="specialities">
+        <section class="specialties">
           <div class="content-wrapper">
             <h2>Specialities</h2>
             <div class="features-items">
               <article>
-                <p class="fontawesome-icon"><i class="fas fa-#"></i></p>
+                <p class="fontawesome-icon"><i class="fas fa-file-code"></i></p>
                 <h3>Hand-Coded HTML</h3>
                 <p class="features-item-description">My focus is writing clean, well-formatted, semantic HTML5 by hand to make sure that the content is easy to read, easy to
                 collaborate, trouble-shoot and accessible.</p>
               </article>
               <article>
-                <p class="fontawesome-icon"><i class="fas fa-#"></i></p>
+                <p class="fontawesome-icon"><i class="fab fa-css3"></i></p>
                 <h3>Well-Organised CSS</h3>
                 <p class="features-item-description">I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean and fast to load, and I
                 make it a habit to stay up to date on current best practices.</p>
               </article>
               <article>
-                <p class="fontawesome-icon"><i class="fas fa-#"></i></p>
+                <p class="fontawesome-icon"><i class="fas fa-pencil-alt"></i></p>
                 <h3>Ease Converting Desings into Code</h3>
                 <p class="features-item-description">I can create high fidelity wireframes so you can see how your website will look like before we start. Have a designer's
                 PSD already, no problem, I can quickly & accurately convert it into a webpage that is pixel-perfect match.</p>
               </article>
               <article>
-                <p class="fontawesome-icon"><i class="fas fa-#"></i></p>
+                <p class="fontawesome-icon"><i class="fas fa-mobile-alt"></i></p>
                 <h3>Responsive Design</h3>
                 <p class="features-item-description">Do you currently have a website you love but it isn't responsive? I can convert a static site to a responsive site so
                 it's optimised for mobile devices.</p>
               </article>
               <article>
-                <p class="fontawesome-icon"><i class="fas fa-#"></i></p>
+                <p class="fontawesome-icon"><i class="fab fa-wordpress-simple"></i></p>
                 <h3>Content Management Systems</h3>
                 <p class="features-item-description">Fancy a website you can update yourself? I can design and build a website for you in a CMS then teach you, how to update it yourself.</p>
               </article>
               <article>
-                <p class="fontawesome-icon"><i class="fas fa-#"></i></p>
+                <p class="fontawesome-icon"><i class="fas fa-share-alt-square"></i></p>
                 <h3>Social Media</h3>
                 <p class="features-item-description">Need help with building your social media platforms such as a Facebook Business page? I can help you create business
                 social media platforms that are linked to your website.</p>
@@ -173,16 +179,16 @@
 <!--FOOTER-->
     <footer>
       <div class="content-wrapper">
-        <div class="main-footer">
+        <div class="copyright">
           <p>&copy Mellony Web Designs 2019</p>
+        </div>
           <div class="social-icons">
             <p><a href="https://github.com/MellTGibson" target="_blank"><i class="fab fa-github-square"></i></a></p>
             <p><a href="https://facebook.com" target="-blank"><i class="fab fa-facebook-square"></i></a></p>
             <p><a href="https://www.twitter.com/MellonyGibson" target="_blank"><i class="fab fa-twitter-square"></i></a></p>
             <p><a href="https://www.linkedin.com/in/mellonygibson" target="_blank"><i class="fab fa-linkedin"></i></a></p>
           </div>
-        </div>
-      </div> <!--footer content-wrapper ends-->
+       </div> <!--footer content-wrapper ends-->
     </footer>
 
 
