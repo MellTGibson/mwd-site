@@ -174,9 +174,8 @@ header {
 }
 
 header .content-wrapper {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
- 
   align-items: center;
   flex-flow: row wrap;
 }
@@ -195,7 +194,7 @@ header img logo {
   position: relative;
   display: flex;
   align-items: flex-end;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
  
 }
 
@@ -216,8 +215,10 @@ header img logo {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  display: flex;
-  justify-content: flex-end;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* Add a grey background color on mouse-over */
@@ -256,7 +257,7 @@ footer {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+  margin: auto 0px;
   color: #eeeeee;
 }
 
@@ -264,10 +265,11 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 footer .copyright p {
-  margin: 20px 0;
+  
   color: #ffffff;
 }
 
@@ -330,6 +332,10 @@ footer .social-icons p i {
 .specialties h2 {
  color: #ffffff;
  border: 5px solid #ffffff;
+}
+
+.specialties .features-items{
+  margin: 10px 0px;
 }
 
 .specialties article {
