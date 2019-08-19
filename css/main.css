@@ -308,6 +308,10 @@ footer .social-icons p i {
   text-align: center;
 }
 
+
+/* Specialties */
+
+
 .specialties {
   background: linear-gradient(to left, #bb5759 0%, #f29580 100%);
   display: flex;
