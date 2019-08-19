@@ -166,8 +166,8 @@ address p {
 }
 
 .content-wrapper {
-  width: 90%;
-  margin: 40px 0;
+    width: 90%;
+    margin: 40px 0;
 }
 
 /* header styles */
@@ -285,28 +285,24 @@ div.social-icons {
 }
 
 footer {
-  flex-direction: column;
   background-color: #f59d89;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-}
-
-footer .content-wrapper {
-    margin: 50px 0;
-}
+  flex-flow: row wrap;
+ }
 
 footer.social-icons {
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
    align-items: center;
 }
 
 footer .social-icons p {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+
 }
 
 
