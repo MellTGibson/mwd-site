@@ -43,6 +43,7 @@
   <meta name="description" content="The portfolio site for Mellony Web Designs, by Mellony Teixeira Gibson Front End Web Developer." />
   <!--Font Awesome CDN -->
   <script src="https://kit.fontawesome.com/d9002ac023.js"></script>
+  <script src="https://use.fontawesome.com/4f8aeb9768.js"></script>
 </head>
 
 <body>
@@ -51,32 +52,42 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-    <header>
-      <div class="content-wrapper">
-        <figure>
-          <a href="index.html" class="active"><img src="img/mwd-logo.png" alt="mellony web designs logo"></a>
-        </figure>
-  <!-- Top Navigation Menu -->
-        <div class="topnav">
-          <a href="#home" class="active"></a>
-          <div id="myLinks">
-            <a href="index.html">Home</a>
-            <a href="#about">About</a> 
-            <a href="portfolio/index.html" target="_blank">Portfolio</a>
-            <a href="contact/index.html" target="_blank">Contact</a>
-          </div>
- <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div>
+  <header>
+      <nav class="navbar">
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+      <figure>
+        <a href="index.html"><img src="img/mwd-logo.png" alt="mellony web designs logo" height="200"
+            width="200"></a>
+      </figure>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">About Me</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Specialties</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Portfolio</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
         <div class="main-statement">
-          <span>Hi,</span><br> I'm a developer who loves to create beautiful<br> things using <span>clean &
+          <span>Hi,</span><br> I'm Mellony, a developer who loves to create beautiful things using <span>clean &
           elegant</span> code.</h1>
         </div>
       </div>      
-    </header> <!--end of header area -->
+
+</header> <!--end of header area -->
    
 <!--BEGINNING OF MAIN AREA-->
 <main>
@@ -165,7 +176,16 @@
       </div> <!--footer content-wrapper ends-->
     </footer>
 
+<!--JS for Hamburger Menu-->
 
+  <script>
+    let mainNav = document.getElementById("js-menu");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+
+      navBarToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+      });
+  </script>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
