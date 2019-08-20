@@ -336,6 +336,15 @@ footer .social-icons {
   text-align: center;
 }
 
+.specialties .coming-soon p {
+   font-style: italic;
+   font-weight: bold;
+}
+
+.specialties .coming-soon p a {
+  text-decoration: underline;
+}
+
 #contact {
   display: flex;
   justify-content: space-around;
