@@ -109,7 +109,7 @@ textarea {
    /* General Styles */
 
 html {
-   font-size: 16px;
+   font-size: 18px;
   }
 
 body {
@@ -118,7 +118,7 @@ body {
   margin: 0;
   font-family: 'Lora', serif;
   font-size: 1em;
-  color: #eff0f5;
+  color: #ffffff;
   }
 
 ul, ol {
@@ -147,16 +147,6 @@ h4 {
 p {
   font-size: .875em;
   line-height: 1.285;
-}
-
-address h4 {
-  font-style: normal;
-}
-
-address p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: .875em;
-  font-style: normal;
 }
 
 .content-wrapper {
@@ -240,19 +230,23 @@ figure {
 /* Footer Styles */
 
 footer {
+  background-color: #bb5759;
+  /*f29580 or current f59d89 */
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-flow: row wrap;
+   text-align: center;
+   margin: auto 0;
   }
 
-footer .content-wrapper {
-  margin: auto 0px;
-
-}
-
+  /*
 footer .social-icons {
-  text-align: center;
-}
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
 
 /* About Styles */
 
@@ -293,100 +287,108 @@ footer .social-icons {
 /* Specialties Styles */
 
 
-.specialties {
-  background: linear-gradient(to left, #bb5759 0%, #f29580 100%);
+#specialties {
+  background: linear-gradient(to bottom, #bb5759 0%, #f29580 100%);
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.specialties h2 {
+#specialties h2 {
  color: #ffffff;
  border: 5px solid #ffffff;
  padding: 5px;
 }
 
-.specialties .features-items{
+#specialties .features-items{
   margin: 0 auto;
 }
 
-.specialties article {
+#specialties article {
   margin: 40px 0px;
 }
 
-.specialties .features-item-description {
+#specialties .features-item-description {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-flow: row wrap;
 }
 
-.specialties i {
+#specialties i {
   font-size: 3.75em;
   margin-bottom: 5px;
 }
 
-.specialties h3 {
+#specialties h3 {
   text-align: center;
 
 }
 
-.specialties p {
+#specialties p {
   margin: 0;
   text-align: center;
 }
 
-.specialties .coming-soon p {
+#specialties .coming-soon p {
    font-style: italic;
    font-weight: bold;
 }
 
-.specialties .coming-soon p a {
+#specialties .coming-soon p a {
   text-decoration: underline;
 }
 
+/* ==========================================================================
+    Portfolio Page styles
+   ========================================================================== */
+
+/* ==========================================================================
+    Contact Page styles
+   ========================================================================== */
+
 #contact {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: center; 
+  flex-flow: row wrap;
   color: #000; 
 }
 
+#contact article {
+  display: flex; 
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 #contact p a {
+  display: flex;
   color: #bb5759;
   font-size: 1.3125em;
   flex-flow: row;
 }
 
+div .social-icons {
+  flex-flow: row wrap;
+}
+
+/*
 div.social-icons {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   border-radius: 50%;
-  width: 40px;
+  width: 100px;
   height: 40px;
 }
 
-footer {
-  background-color: #f59d89;
-  display: flex;
-  flex-direction: column;
+.social-icons i {
+  font-size: 2em;
+  padding: 5px;
   text-align: center;
-  flex-flow: row wrap;
- }
-
-footer.social-icons {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  margin: auto  5px;
 }
-
-footer .social-icons p {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
+*/
 
 
 
