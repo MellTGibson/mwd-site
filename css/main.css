@@ -130,6 +130,12 @@ a {
   text-decoration: none;
   }
 
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 1.16em;
+  font-weight: 500;
+}
+
 h2 {
   font-family: 'Lora',serif;
   font-size: 1.875em;
@@ -161,8 +167,8 @@ p {
 }
 
 header {
-  background: var(--background) center no-repeat #fc997a;
-  background-size: cover;
+  background: var(--background) center no-repeat #bb5759;
+  background-size: cover; 
 }
 
 .navbar {
@@ -227,25 +233,6 @@ figure {
   font-size: 1.5em;
 }
 
-/* Footer Styles */
-
-footer {
-  background-color: #bb5759;
-  /*f29580 or current f59d89 */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-flow: row wrap;
-   text-align: center;
-   margin: auto 0;
-  }
-
-  /*
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
 
 
 /* About Styles */
@@ -361,18 +348,6 @@ footer .social-icons {
   flex-flow: row wrap;
 }
 
-#contact p a {
-  display: flex;
-  color: #bb5759;
-  font-size: 1.3125em;
-  flex-flow: row;
-}
-
-div .social-icons {
-  flex-flow: row wrap;
-}
-
-/*
 div.social-icons {
   display: flex;
   justify-content: space-evenly;
@@ -382,13 +357,37 @@ div.social-icons {
   height: 40px;
 }
 
+#contact p a {
+  color: #bb5759;
+  font-size: 1.3125em;
+  flex-flow: row;
+}
+
 .social-icons i {
   font-size: 2em;
   padding: 5px;
-  text-align: center;
   margin: auto  5px;
 }
-*/
+
+/* Footer Styles */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:#bb5759;
+  opacity: 0.9;
+}
+
+
+footer .social-icons i {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ } 
+
+
 
 
 
