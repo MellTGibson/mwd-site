@@ -270,7 +270,7 @@ footer .content-wrapper {
   align-items: center;
   border-radius: 50%;
   width: 40px;
-  height: 40px;
+  height: 20px;
 }
 
 .footer-social-icons p  {
@@ -357,7 +357,6 @@ footer .content-wrapper {
 
 #specialties h3 {
   text-align: center;
-
 }
 
 #specialties p {
@@ -377,6 +376,53 @@ footer .content-wrapper {
 /* ==========================================================================
     Portfolio Page styles
    ========================================================================== */
+
+.portfolio {
+  /* background: linear-gradient(to bottom, #bb5759 -50%, #f29580 100%); */
+  background: #f29580;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.portfolio h2 {
+  color: #ffffff;
+  border: 5px solid #ffffff;
+  padding: 5px;
+}
+
+.portfolio .features-items {
+  margin: 0 auto;
+}
+
+.portfolio article {
+  margin: 40px 0px;
+}
+
+.portfolio h3 {
+  text-align: center;
+}
+
+.portfolio img {
+  border: 2px solid #ffffff;
+  width: 100%;
+}
+
+.portfolio .features-item-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.portfolio article p {
+  margin: 0;
+  text-align: center;
+}
+
+.portfolio .portfolio-intro p {
+  text-align: left;
+}
 
 /* ==========================================================================
     Contact Page styles
