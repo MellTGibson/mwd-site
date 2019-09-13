@@ -153,8 +153,8 @@ p {
   line-height: 1.3;
 }
 
-
 figure {
+  display: flex;
   margin: 0;
 }
 
@@ -275,20 +275,15 @@ footer .content-wrapper {
   font-size: 1.3125em;
 }
 
-/* ================= MOBILE STYLES ==================== */
+/* ================= Mobile Styles - Homepage ==================== */
 
-/* About Me Styles */
+/* About */
 
 #about {
   background-color: #fc997a;
   display: flex;
   justify-content: center;
-}
-
-#about article {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  flex-flow: wrap;
 }
 
 #about h2 {
@@ -296,11 +291,23 @@ footer .content-wrapper {
   padding: 5px;
 }
 
+#about article div, 
+#about article figure {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 #about figure img {
   width: 100%;
   border: 2px solid #ffffff;
+  padding: 2px;
+  background: #544F73;
 }
 
+#about article figure p {
+  text-align: center;
+}
 /* Leading Statement */
 
 .lead-statement {
@@ -571,6 +578,7 @@ div.social-icons {
 
 .content-wrapper {
   max-width: 640px;
+  margin: 100px 0;
  }
 
 h2 {
@@ -580,6 +588,11 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: 1.3em;
   line-height: 1.25;
 }
 
@@ -629,6 +642,27 @@ header .navbar {
   .nav-links:hover {
     color: rgb(187, 87, 89);
    }
+
+/* ============= Homepage Styles =============*/
+
+/* --About Styles --*/
+
+#about article {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about article div,
+#about article figure {
+  width: 49%;
+}
+
+#about img {
+  margin: 16px 0 16px 0;
+  width: 100%;
+} 
+
+
 
 }
 
