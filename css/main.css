@@ -100,23 +100,23 @@ textarea {
 
 
    /*  Google Fonts
-   font-family: 'Trocchi', serif;
    font-family: 'Great Vibes', cursive;
    font-family: 'Lora', serif;
+   font-family: 'Open Sans', sans-serif;
    
    */
 
 /* =====General Styles===== */
 
 html {
-   font-size: 18px;
+   font-size: 16px;
   }
 
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color: #ffffff;
   }
@@ -131,30 +131,32 @@ a {
   }
 
 h1 {
-  font-family: 'Lora', serif;
+  font-family: 'Lora',serif;
   font-size: 1.16em;
   font-weight: 500;
 }
 
 h2 {
-  font-family: 'Lora',serif;
   font-size: 1.875em;
   font-weight: 500;
 }
 
 h3,
 h4 {
-  font-family: 'Lora',serif;
   font-weight: 500;
   font-size: 1.125em;
   margin: 10px 0;
 }
 
 p {
-  font-size: .875em;
-  line-height: 1.285;
+  font-size: 1em;
+  line-height: 1.3;
 }
 
+
+figure {
+  margin: 0;
+}
 
 .content-wrapper {
     width: 90%;
@@ -180,9 +182,10 @@ header {
   text-shadow: 1px 1px #000;
 }
 
-figure {
+header .nav-bar figure img {
   margin: 0;
   padding-bottom: 20px;
+  text-decoration: none;
 }
 
 .main-nav {
@@ -190,8 +193,8 @@ figure {
   display: none;
 }
 
-.nav-links,
-.logo {
+.nav-links, logo
+{
   text-decoration: none;
   color: white;
 }
@@ -203,11 +206,6 @@ figure {
 .main-nav li {
   text-align: center;
   margin: 15px auto;
-}
-
-.logo {
-  display: inline-block;
-  margin-left: 20px;
 }
 
 .navbar-toggle {
@@ -282,11 +280,15 @@ footer .content-wrapper {
 /* About Me Styles */
 
 #about {
+  background-color: #fc997a;
+  display: flex;
+  justify-content: center;
+}
+
+#about article {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #fc997a;
-  line-height: 1.3;
 }
 
 #about h2 {
@@ -294,9 +296,9 @@ footer .content-wrapper {
   padding: 5px;
 }
 
-#about img {
-  border: 2px solid #ffffff;
+#about figure img {
   width: 100%;
+  border: 2px solid #ffffff;
 }
 
 /* Leading Statement */
@@ -306,16 +308,14 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  
 }
 
 .lead-statement h2 {
   color: #fc997a;
   border: 5px solid #fc997a;
-  font-family: 'Great Vibes',
-  cursive;
-  text-align: center;
+  font-family: 'Great Vibes', cursive;
   padding: 5px;
+  text-align: center;
 }
 
 
@@ -404,8 +404,8 @@ footer .content-wrapper {
 }
 
 .portfolio img {
-  border: 2px solid #ffffff;
   width: 100%;
+  border: 2px solid #ffffff;
 }
 
 .portfolio .features-item-description {
@@ -442,6 +442,17 @@ footer .content-wrapper {
   flex-flow: row wrap;
 }
 
+#contact h2 {
+  color: #bb5759;
+  font-weight: 500;
+  border: 5px solid #bb5759;
+  padding: 5px;
+}
+
+#contact img {
+  border: 2px solid #e6e6e6;
+}
+
 div.social-icons {
   display: flex;
   justify-content: space-evenly;
@@ -462,11 +473,6 @@ div.social-icons {
   padding: 5px;
   margin: auto  5px;
 }
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -560,18 +566,46 @@ div.social-icons {
 @media screen and (min-width: 768px) {
         /* Tablet Styles Here */
 
+
+/* General Styles Here */
+
+.content-wrapper {
+  max-width: 640px;
+ }
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
 /* --Header Styles --*/
-  .navbar {
+
+header {
+  justify-content: space-around;
+}
+
+header .content-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+header .navbar {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
+    height: 120px;
     align-items: center;
+    width: 20%;
   }
 
   .main-nav {
     display: flex;
-    margin-right: 30px;
+    margin-right: 10px;
     flex-direction: row;
     justify-content: flex-end;
   }
@@ -581,25 +615,37 @@ div.social-icons {
   }
 
   .nav-links {
-    margin-left: 40px;
+    margin-left: 30px;
   }
 
-  .logo {
-    margin-top: 0;
+  .navbar figure {
+    margin-top: 50px;
   }
 
   .navbar-toggle {
     display: none;
   }
 
-  
   .nav-links:hover {
     color: rgb(187, 87, 89);
    }
 
 }
 
+@media screen and (min-width: 1200px) {
 
+  /*Desktop styles here*/
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
