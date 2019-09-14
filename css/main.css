@@ -317,11 +317,15 @@ footer .content-wrapper {
   flex-flow: row wrap;
 }
 
-.lead-statement h2 {
+.lead-statement h2 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fc997a;
   border: 5px solid #fc997a;
   font-family: 'Great Vibes', cursive;
-  padding: 5px;
+  font-size: 1.25em;
+  padding: 10px;
   text-align: center;
 }
 
@@ -658,11 +662,9 @@ header .navbar {
 }
 
 #about img {
-  margin: 16px 0 16px 0;
+  margin: 20px 0 16px 0;
   width: 100%;
 } 
-
-
 
 }
 
