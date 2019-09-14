@@ -324,7 +324,7 @@ footer .content-wrapper {
   color: #fc997a;
   border: 5px solid #fc997a;
   font-family: 'Great Vibes', cursive;
-  font-size: 1.25em;
+  font-size: 1.25em; /*37.5px font-size (30px x 1.25) */
   padding: 10px;
   text-align: center;
 }
@@ -346,15 +346,20 @@ footer .content-wrapper {
  padding: 5px;
 }
 
-#specialties .features-items{
+#specialties .specialties-items {
   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row wrap;
 }
 
 #specialties article {
   margin: 40px 0px;
+    
 }
 
-#specialties .features-item-description {
+#specialties .specialties-item-description {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -665,6 +670,33 @@ header .navbar {
   margin: 20px 0 16px 0;
   width: 100%;
 } 
+
+/* --Specialties Styles --*/
+
+#specialties {
+  min-height: 860px;
+}
+
+#specialties h2 {
+  margin: 0 20px 0 20px;
+}
+
+#specialties .specialties-items {
+  margin: 20px 0;
+}
+
+
+#specialties .specialties-items  article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+}
+
+#specialties .specialties-item-description {
+  width: 65%;
+}
 
 }
 
