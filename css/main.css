@@ -258,7 +258,7 @@ footer .content-wrapper {
 
 .footer-social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -272,7 +272,7 @@ footer .content-wrapper {
 }
 
 .footer-social-icons p  {
-  font-size: 1.3125em;
+  font-size: 1.45em;
 }
 
 /* ================= Mobile Styles - Homepage ==================== */
@@ -627,7 +627,12 @@ header .navbar {
 
   .main-nav {
     display: flex;
-    margin-right: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+   }
+
+  ul #js-menu .main-nav{
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
@@ -696,6 +701,26 @@ header .navbar {
 
 #specialties .specialties-item-description {
   width: 65%;
+}
+
+
+/* --Footer Styles --*/
+
+footer .content-wrapper {
+  width: 55%; 
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .footer-social-icons {
+  font-size: 1.5em;
+  width: 8em;
+  justify-content: space-between;
 }
 
 }
