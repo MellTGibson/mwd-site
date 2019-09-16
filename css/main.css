@@ -172,7 +172,7 @@ figure {
 }
 
 header {
-  background: var(--background) center no-repeat #bb5759;
+  background: var(--background) center no-repeat #544F73;
   background-size: cover; 
 }
 
@@ -469,6 +469,7 @@ footer .content-wrapper {
 
 #contact img {
   border: 2px solid #e6e6e6;
+  width: 100%;
 }
 
 div.social-icons {
@@ -491,6 +492,12 @@ div.social-icons {
   padding: 5px;
   margin: auto  5px;
 }
+
+/*
+.form {
+  background: url(../img/form-background-four.jpg);
+} */
+
 
 /* ==========================================================================
    Helper classes
@@ -589,7 +596,7 @@ div.social-icons {
 
 .content-wrapper {
   max-width: 700px;
-  margin: 100px 0;
+  margin: 80px 0;
  }
 
 h2 {
@@ -726,7 +733,7 @@ footer .footer-social-icons {
 }
 
 
-/* ============= Portfolio Tablet Styles =============*/
+/* ============= Portfolio Page Tablet Styles =============*/
 
 
 .portfolio {
@@ -744,7 +751,7 @@ footer .footer-social-icons {
 
 .portfolio article,
 .portfolio article fig {
-  width: 45%;
+  width: 49%;
 } 
 
  .portfolio .portfolio-gallery article {
@@ -752,20 +759,35 @@ footer .footer-social-icons {
   align-items: center;
   justify-content: space-around;
   flex-flow: row wrap;
- 
-  
 }
 
 
-
- 
 .portfolio .portfolio-gallery {
   margin: 20px 0;
  }
 
+/* ============= Contact Page Tablet Styles =============*/
 
+#contact article {
+ display: flex;
+ justify-content: center;
+ margin: 20px 0;
+}
 
+#contact article address,
+#contact article figure {
+  width: 49%;
+}
+#contact img {
+ width: 100%;
+}
 
+/* 
+#contact article address, 
+#contact article figure {
+   display: flex;
+   flex-flow: row wrap;
+} */
 
 
 }
