@@ -407,7 +407,7 @@ footer .content-wrapper {
   padding: 5px;
 }
 
-.portfolio .features-items {
+.portfolio .portfolio-gallery {
   margin: 0 auto;
 }
 
@@ -424,11 +424,13 @@ footer .content-wrapper {
   border: 2px solid #ffffff;
 }
 
-.portfolio .features-item-description {
+.portfolio .tech-used {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 15px 0;
+  
 }
 
 .portfolio article p {
@@ -586,7 +588,7 @@ div.social-icons {
 /* General Styles Here */
 
 .content-wrapper {
-  max-width: 640px;
+  max-width: 700px;
   margin: 100px 0;
  }
 
@@ -657,7 +659,7 @@ header .navbar {
     color: rgb(187, 87, 89);
    }
 
-/* ============= Homepage Styles =============*/
+/* ============= Homepage Tablet Styles =============*/
 
 /* --About Styles --*/
 
@@ -722,6 +724,49 @@ footer .footer-social-icons {
   width: 8em;
   justify-content: space-between;
 }
+
+
+/* ============= Portfolio Tablet Styles =============*/
+
+
+.portfolio {
+ min-height: 860px;
+} 
+
+.portfolio .portfolio-gallery {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+
+
+.portfolio article,
+.portfolio article fig {
+  width: 45%;
+} 
+
+ .portfolio .portfolio-gallery article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+ 
+  
+}
+
+
+
+ 
+.portfolio .portfolio-gallery {
+  margin: 20px 0;
+ }
+
+
+
+
+
 
 }
 
