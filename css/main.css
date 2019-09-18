@@ -423,6 +423,12 @@ footer .content-wrapper {
 .portfolio img {
   width: 100%;
   border: 2px solid #ffffff;
+  opacity: 1.0;
+  transition: opacity 1s ease-in-out;
+}
+
+.portfolio img:hover {
+  opacity: 0.5;
 }
 
 .portfolio .tech-used {
@@ -765,7 +771,12 @@ footer .footer-social-icons {
 
   /* --------- General Styles ------------ */
  .content-wrapper {
-   max-width: 960px;
+   max-width: 970px;
+ }
+
+ p {
+   font-size: 1.125em;
+   line-height: 1.5;
  }
 
  /* -- Header Styles -- */
@@ -846,6 +857,16 @@ h1 {
 }
 
 
+/* ============= Portfolio Desktop Styles =============*/
+
+
+#portfolio .portfolio-gallery article {
+   margin: 20px 20px;
+}
+
+.tech-used {
+  width: 70%;
+}
 
 }
 
