@@ -132,8 +132,9 @@ a {
 
 h1 {
   font-family: 'Lora',serif;
-  font-size: 1.16em;
+  font-size: 1.45em;
   font-weight: 500;
+   padding-bottom: 20px;
 }
 
 h2 {
@@ -176,6 +177,10 @@ header {
   background-size: cover; 
 }
 
+.homepage-header {
+  min-height: 500px;
+}
+
 .navbar {
   font-size: 1.125em; /*font-size 18px */
   padding-bottom: 10px;
@@ -191,12 +196,6 @@ header .nav-bar figure img {
 .main-nav {
   list-style-type: none;
   display: none;
-}
-
-.nav-links, logo
-{
-  text-decoration: none;
-  color: white;
 }
 
 .nav-links:hover {
@@ -223,9 +222,10 @@ header .nav-bar figure img {
 
 .main-statement {
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  margin: 40px 40px 0 40px;
+  padding-bottom: 20px;
   text-align: left;
-  padding: 50px 50px;
   text-shadow: 1px 1px #000;
 }
 
@@ -301,6 +301,7 @@ footer .content-wrapper {
 #about figure img {
   width: 100%;
   border: 2px solid #ffffff;
+  margin: 16px 0;
   padding: 2px;
   background: #544F73;
 }
@@ -430,7 +431,6 @@ footer .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 15px 0;
-  
 }
 
 .portfolio article p {
@@ -493,10 +493,7 @@ div.social-icons {
   margin: auto  5px;
 }
 
-/*
-.form {
-  background: url(../img/form-background-four.jpg);
-} */
+
 
 
 /* ==========================================================================
@@ -587,17 +584,23 @@ div.social-icons {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/*========================= Tablet Styles Here ========================= */
 
 @media screen and (min-width: 768px) {
-        /* Tablet Styles Here */
-
-
+    
 /* General Styles Here */
 
 .content-wrapper {
   max-width: 700px;
   margin: 80px 0;
  }
+
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  max-width: 90%;
+}
 
 h2 {
   font-size: 2.25em;
@@ -616,56 +619,28 @@ h4 {
 
 /* --Header Styles --*/
 
+
 header {
   justify-content: space-around;
 }
+
+.homepage-header {
+  min-height: 700px;
+}
+
 
 header .content-wrapper {
   width: 100%;
   justify-content: space-between;
 }
 
-header .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 120px;
-    align-items: center;
-    width: 20%;
+.main-statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   }
-
-  .main-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-   }
-
-  ul #js-menu .main-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 30px;
-  }
-
-  .navbar figure {
-    margin-top: 50px;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-  .nav-links:hover {
-    color: rgb(187, 87, 89);
-   }
-
+ 
 /* ============= Homepage Tablet Styles =============*/
 
 /* --About Styles --*/
@@ -782,27 +757,74 @@ footer .footer-social-icons {
  width: 100%;
 }
 
-/* 
-#contact article address, 
-#contact article figure {
-   display: flex;
-   flex-flow: row wrap;
-} */
-
-
 }
 
+/*========================= Desktop Styles Here ========================= */
 @media screen and (min-width: 1200px) {
 
-  /*Desktop styles here*/
+
+  /* --------- General Styles ------------ */
+ .content-wrapper {
+   max-width: 960px;
+ }
+
+ /* -- Header Styles -- */
+
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 120px;
+    align-items: center;
+   }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   }
+
+ 
+  ul #js-menu .main-nav{
+    display: flex;
+    margin-left: 30px;
+  } 
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 15px;
+    margin-right: 30px;
+  }
+
+.navbar figure {
+    margin-top: 50px;
+  }
+  
+.navbar-toggle {
+  display: none;
+}
 
 
+ /* ============= Homepage Desktop Styles =============*/
 
+/* --- Header ---*/
 
+.homepage-header {
+  min-height: 700px;
+}
 
+.main-statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
+h1 {
+  margin-top: 80px;
+}
 
 
 }
