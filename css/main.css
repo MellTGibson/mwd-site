@@ -223,7 +223,7 @@ header .nav-bar figure img {
 .main-statement {
   color: #fff;
   font-size: 1.2em;
-  margin: 40px 40px 0 40px;
+  margin-left: 40px;
   padding-bottom: 20px;
   text-align: left;
   text-shadow: 1px 1px #000;
@@ -831,6 +831,7 @@ footer .footer-social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 h1 {
