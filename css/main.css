@@ -126,7 +126,6 @@ ul, ol {
   }
 
 a {
-  color: #ffffff;
   text-decoration: none;
   }
 
@@ -198,6 +197,10 @@ header .nav-bar figure img {
   display: none;
 }
 
+.main-nav a {
+  color: #fff;
+}
+
 .nav-links:hover {
   color: rgb(187, 87, 89);
 }
@@ -245,6 +248,7 @@ footer {
   text-align: center;
   flex-direction: column;
   background-color: #544F73;
+  color: #fff;
  }
 
 footer .content-wrapper {
@@ -271,7 +275,11 @@ footer .content-wrapper {
 
 .footer-social-icons p  {
   font-size: 1.45em;
-}
+ }
+
+ .footer-social-icons p a {
+  color: #fff;
+ }
 
 footer .copyright
 {
@@ -408,17 +416,18 @@ footer .copyright
    ========================================================================== */
 
 .portfolio {
-  /* background: linear-gradient(to bottom, #bb5759 -50%, #f29580 100%); */
-  background: #f29580;
+  background: url("../img/portfolio-background.jpg") center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .portfolio h2 {
-  color: #ffffff;
-  border: 5px solid #ffffff;
+  border: 5px solid #544F73;
   padding: 5px;
+  color: #544F73;
+  font-weight: bold;
 }
 
 .portfolio .portfolio-gallery {
@@ -426,16 +435,18 @@ footer .copyright
 }
 
 .portfolio article {
-  margin: 40px 0px;
+  margin: 35px 0px;
 }
 
 .portfolio h3 {
+  color: #544F73;
+  font-weight: bold;
   text-align: center;
 }
 
 .portfolio img {
   width: 100%;
-  border: 2px solid #ffffff;
+  border: 3px solid #544F73;
   opacity: 1.0;
   transition: opacity 1s ease-in-out;
 }
@@ -480,10 +491,10 @@ footer .copyright
 }
 
 #contact h2 {
-  color: #bb5759;
-  font-weight: 500;
-  border: 5px solid #bb5759;
-  padding: 5px;
+   border: 5px solid #544F73;
+   padding: 5px;
+   color: #544F73;
+   font-weight: bold;
 }
 
 #contact img {
@@ -683,8 +694,6 @@ header .content-wrapper {
 
 #specialties {
   min-height: 860px;
-  background: url("../img/specialtiesb2.jpg") center no-repeat;
-  background-size: cover;
 }
 
 #specialties h2 {
@@ -866,6 +875,11 @@ h1 {
 #about article div p {
   margin: 0px;
   line-height: 1.5;
+}
+
+#specialties {
+  background: url("../img/specialtiesb2.jpg") center no-repeat;
+  background-size: cover;
 }
 
 #specialties .specialties-items article {
