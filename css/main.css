@@ -118,7 +118,7 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color: #ffffff;
+  color: #121126;
   }
 
 ul, ol {
@@ -151,7 +151,7 @@ h4 {
 
 p {
   font-size: 1em;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 figure {
@@ -244,13 +244,11 @@ footer {
   flex-flow: row wrap;
   text-align: center;
   flex-direction: column;
-  background-color: #bb5759;
-  opacity: 0.9;
-}
+  background-color: #544F73;
+ }
 
 footer .content-wrapper {
-  background-color: #bb5759;
-  opacity: 0.9;
+  background-color: #544F73;
   width: 55%;
   margin: 20px 0;
 }
@@ -275,20 +273,26 @@ footer .content-wrapper {
   font-size: 1.45em;
 }
 
+footer .copyright
+{
+  color: #fff;
+}
+
 /* ================= Mobile Styles - Homepage ==================== */
 
 /* About */
 
 #about {
-  background-color: #fc997a;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
 }
 
 #about h2 {
-  border: 5px solid #ffffff;
+  border: 5px solid #544F73;
   padding: 5px;
+  color: #544F73;
+  font-weight: bold;
 }
 
 #about article div, 
@@ -300,14 +304,15 @@ footer .content-wrapper {
 
 #about figure img {
   width: 100%;
-  border: 2px solid #ffffff;
-  margin: 16px 0;
-  padding: 2px;
-  background: #544F73;
+  border: 3px solid #544F73;
+  margin: 20px 0;
+  padding: 3px;
+  background: #ffffff;
 }
 
 #about article figure p {
   text-align: center;
+  color: #121126;
 }
 /* Leading Statement */
 
@@ -316,14 +321,15 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #544F73;
 }
 
 .lead-statement h2 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fc997a;
-  border: 5px solid #fc997a;
+  color: #ffffff;
+  border: 5px solid #ffffff;
   font-family: 'Great Vibes', cursive;
   font-size: 1.25em; /*37.5px font-size (30px x 1.25) */
   padding: 10px;
@@ -335,16 +341,18 @@ footer .content-wrapper {
 
 
 #specialties {
-  background: linear-gradient(to bottom, #bb5759 0%, #f29580 100%);
+  background: url("../img/specialtiesb1.jpg") center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 #specialties h2 {
- color: #ffffff;
- border: 5px solid #ffffff;
- padding: 5px;
+  border: 5px solid #544F73;
+  padding: 5px;
+  color: #544F73;
+  font-weight: bold;
 }
 
 #specialties .specialties-items {
@@ -370,15 +378,19 @@ footer .content-wrapper {
 #specialties i {
   font-size: 3.75em;
   margin-bottom: 5px;
+  color: #544F73;
 }
 
 #specialties h3 {
   text-align: center;
+  color: #544F73;
+  font-weight: bold;
 }
 
 #specialties p {
   margin: 0;
   text-align: center;
+      font-weight: 400;
 }
 
 #specialties .coming-soon p {
@@ -388,6 +400,7 @@ footer .content-wrapper {
 
 #specialties .coming-soon p a {
   text-decoration: underline;
+  color: #544F73;
 }
 
 /* ==========================================================================
@@ -670,6 +683,8 @@ header .content-wrapper {
 
 #specialties {
   min-height: 860px;
+  background: url("../img/specialtiesb2.jpg") center no-repeat;
+  background-size: cover;
 }
 
 #specialties h2 {
