@@ -544,9 +544,14 @@ div.social-icons {
   margin: auto  5px;
 }
 
-.contact-form {
-  background: url("../img/form-background-four.jpg") center no-repeat #544F73;
+section .contact-form  {
+  background: url("../img/form-background-four.jpg") center no-repeat;
   background-size: cover;
+  width: 100%;
+}
+
+.form-all {
+margin: 0 auto;
 }
 
 
