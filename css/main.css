@@ -307,7 +307,11 @@ footer .copyright
   color: #fff;
 }
 
-/* ================= Mobile Styles - Homepage ==================== */
+/* ================= Mobile Styles ==================== */
+
+/* ==========================================================================
+    HomePage styles
+   ========================================================================== */
 
 /* About */
 
@@ -549,6 +553,8 @@ div.social-icons {
   padding: 5px;
   margin: auto  5px;
 }
+ 
+/* CONTACT FORM STYLES */
 
 section .contact-form  {
   background: url("../img/form-background.jpg") center no-repeat;
@@ -563,7 +569,43 @@ section .contact-form  {
 margin: 0 auto;
 }
 
+/* ==========================================================================
+    Thank you Page Submission styles
+   ========================================================================== */
 
+.thankyou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 650px;
+}
+
+.polaroid-thankyou-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.polaroid-thankyou-card figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.polaroid-thankyou-card img {
+  width: 100%;
+}
+  
+div.container {
+  padding:10px;
+}
 
 /* ==========================================================================
    Helper classes
