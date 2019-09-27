@@ -505,6 +505,10 @@ footer .copyright
   color: #000; 
 }
 
+#contact address {
+  padding-right: 10px;
+}
+
 #contact article {
   display: flex; 
   justify-content: center;
@@ -519,7 +523,9 @@ footer .copyright
 }
 
 #contact img {
-  border: 2px solid #e6e6e6;
+  border: 3px solid #544F73;
+  padding: 3px;
+  background: #ffffff;
   width: 100%;
 }
 
@@ -545,9 +551,12 @@ div.social-icons {
 }
 
 section .contact-form  {
-  background: url("../img/form-background-four.jpg") center no-repeat;
+  background: url("../img/form-background.jpg") center no-repeat;
   background-size: cover;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .form-all {
@@ -917,7 +926,7 @@ h1 {
 }
 
 
-/* ============= Portfolio Desktop Styles =============*/
+/* ============= PORTFOLIO DESKTOP STYLES =============*/
 
 
 #portfolio .portfolio-gallery article {
@@ -926,6 +935,22 @@ h1 {
 
 .tech-used {
   width: 70%;
+}
+
+/* ============= CONTACT DESKTOP STYLES =============*/
+
+section .contact-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0
+}
+
+ form.jotform-form {
+   display: flex;
+   justify-content: center;
+
 }
 
 }
