@@ -426,6 +426,10 @@ footer .copyright
       font-weight: 400;
 }
 
+#specialties .coming-soon {
+  margin-bottom: 15px;
+}
+
 #specialties .coming-soon p {
    font-style: italic;
    font-weight: bold;
@@ -442,7 +446,7 @@ footer .copyright
    display: flex;
    justify-content: center;
    align-items: center;
-   margin: 30px 0 20px 0;
+   margin: 20px 0 20px 0;
 }
 
 .cta button {
@@ -461,7 +465,6 @@ footer .copyright
   font-family:'open sans',
   sans-serif;
   font-size: 0.8125em;
- 
 }
 
 .cta button span {
@@ -487,7 +490,7 @@ footer .copyright
     Portfolio Page styles
    ========================================================================== */
 
-.portfolio {
+#portfolio {
   background: url("../img/portfolio-background.jpg") center no-repeat;
   background-size: cover;
   display: flex;
@@ -495,39 +498,49 @@ footer .copyright
   flex-flow: row wrap;
 }
 
-.portfolio h2 {
+#portfolio h2 {
   border: 5px solid #544F73;
   padding: 5px;
   color: #544F73;
   font-weight: bold;
 }
 
-.portfolio .portfolio-gallery {
-  margin: 0 auto;
+#portfolio div.portfolio-statement,
+#portfolio div.portfolio-statement figure {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  text-align: left;
 }
 
-.portfolio article {
+#portfolio .portfolio-gallery  {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+ }
+
+.portfolio-gallery .content-wrapper {
+  margin: 20px 0;
+}
+
+
+#portfolio .portfolio-gallery article {
   margin: 35px 0px;
 }
 
-.portfolio h3 {
+#portfolio .portfolio-gallery h3 {
   color: #544F73;
   font-weight: bold;
   text-align: center;
 }
 
-.portfolio img {
+#portfolio img {
   width: 100%;
   border: 3px solid #544F73;
-  opacity: 1.0;
-  transition: opacity 1s ease-in-out;
 }
 
-.portfolio img:hover {
-  opacity: 0.5;
-}
-
-.portfolio .tech-used {
+#portfolio .portfolio-gallery .tech-used {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -535,14 +548,12 @@ footer .copyright
   margin: 15px 0;
 }
 
-.portfolio article p {
+#portfolio .portfolio-gallery article p {
   margin: 0;
   text-align: center;
 }
 
-.portfolio .portfolio-intro p {
-  text-align: left;
-}
+
 
 /* ==========================================================================
     Contact Page styles
@@ -775,6 +786,12 @@ h4 {
   line-height: 1.25;
 }
 
+p {
+  font-size: 1em;
+  line-height: 1.25em;
+
+}
+
 /* --Header Styles --*/
 
 
@@ -845,13 +862,9 @@ header .content-wrapper {
   width: 65%;
 }
 
-
-/* call to action button */
-/*
-.cta button {
-  height: 80px;
-  max-width: 20px;
-} */
+div .coming-soon {
+  margin: 10px; 0;
+}
 
 /* --Footer Styles --*/
 
@@ -876,35 +889,64 @@ footer .footer-social-icons {
 /* ============= Portfolio Page Tablet Styles =============*/
 
 
-.portfolio {
+#portfolio {
  min-height: 860px;
 } 
 
-.portfolio .portfolio-gallery {
+#portfolio .portfolio-statement {
   display: flex;
-  align-content: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  flex-basis: 50%;
+  
 }
 
-
-.portfolio article,
-.portfolio article fig {
+#portfolio .portfolio-statement div,
+#portfolio .portfolio-statement figure {
   width: 49%;
-} 
+}
 
- .portfolio .portfolio-gallery article {
+#portfolio .portfolio-statement p {  
+  margin: 16px 0 16px 25px;
+}
+
+ 
+#portfolio .portfolio-statement figure img {
+   margin: 15px 0px;
+   width: 100%;
+}
+
+#portfolio .portfolio-gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.portfolio-gallery .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+#portfolio .portfolio-gallery {
+  margin: 20px 0;
+}
+
+#portfolio .portfolio-gallery article {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 
-.portfolio .portfolio-gallery {
-  margin: 20px 0;
- }
+#portfolio .portfolio-gallery article,
+#portfolio .portfolio-gallery article fig {
+  width: 49%;
+}
+
+
+
 
 /* ============= Contact Page Tablet Styles =============*/
 
@@ -1024,13 +1066,21 @@ h1 {
 
 /* ============= PORTFOLIO DESKTOP STYLES =============*/
 
+.portfolio-gallery {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
 
-#portfolio .portfolio-gallery article {
+.portfolio-gallery article {
    margin: 20px 20px;
 }
 
 .tech-used {
-  width: 70%;
+  width: 75%;
+  text-align: center;
 }
 
 /* ============= CONTACT DESKTOP STYLES =============*/
