@@ -181,7 +181,7 @@ figure {
 }
 
 #btnScrollToTop:active {
-  background: #BFA3AA;
+  background: #bb5759;
 }
 
 /* ==================== Base Header - Footer Styles =========================*/
@@ -434,6 +434,53 @@ footer .copyright
 #specialties .coming-soon p a {
   text-decoration: underline;
   color: #544F73;
+}
+
+/* Call to Action Button */
+
+.cta {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 30px 0 20px 0;
+}
+
+.cta button {
+  padding: 15px 25px;
+  background: linear-gradient(to right, #121126, #544F73, #121126);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 3px 6px #999;
+}
+
+  /* cta text */
+.cta button a {
+  color: #fff;
+  font-family:'open sans',
+  sans-serif;
+  font-size: 0.8125em;
+ 
+}
+
+.cta button span {
+  color: #fff;
+  font-size: 1.875em;
+  font-family:'open sans',
+  sans-serif;
+  letter-spacing:-1px;
+  font-weight:bold;
+}
+
+.cta button:hover {
+  background: #544F73;
+}
+
+.cta button:active {
+  background-color: #544F73;
+  box-shadow: 0 3px #666;
+  transform: translateY(5px);
 }
 
 /* ==========================================================================
@@ -798,6 +845,13 @@ header .content-wrapper {
   width: 65%;
 }
 
+
+/* call to action button */
+/*
+.cta button {
+  height: 80px;
+  max-width: 20px;
+} */
 
 /* --Footer Styles --*/
 
