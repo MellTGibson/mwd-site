@@ -539,6 +539,9 @@ footer .copyright
 #portfolio img {
   width: 100%;
   border: 3px solid #544F73;
+  margin: 20px 0;
+  padding: 3px;
+  background: #ffffff;
 }
 
 #portfolio .portfolio-gallery .tech-used {
@@ -619,6 +622,7 @@ section .contact-form  {
   background: url("../img/form-background.jpg") center no-repeat;
   background-size: cover;
   width: 100%;
+  border-top: 3px solid #544F73;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
