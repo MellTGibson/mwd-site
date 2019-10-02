@@ -163,6 +163,52 @@ figure {
     margin: 40px 0;
 }
 
+/* Call to Action Button */
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 20px 0;
+}
+
+.cta a {
+  padding: 15px 25px;
+  background: linear-gradient(to right, #121126, #544F73, #121126);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 3px 6px #999;
+}
+
+/* cta text */
+.cta a {
+  color: #fff;
+  font-family: 'open sans',
+    sans-serif;
+  font-size: 0.8125em;
+}
+
+.cta a span {
+  color: #fff;
+  font-size: 1.875em;
+  font-family: 'open sans',
+    sans-serif;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.cta a:hover {
+  background: #544F73;
+}
+
+.cta a:active {
+  background-color: #544F73;
+  box-shadow: 0 3px #666;
+  transform: translateY(5px);
+}
+
 /* Scroll to Top Button Styles */ 
 
 #btnScrollToTop {
@@ -441,51 +487,7 @@ footer .copyright
   color: #544F73;
 }
 
-/* Call to Action Button */
 
-.cta {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 40px 0 20px 0;
-}
-
-.cta button {
-  padding: 15px 25px;
-  background: linear-gradient(to right, #121126, #544F73, #121126);
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  box-shadow: 3px 6px #999;
-}
-
-  /* cta text */
-.cta button a {
-  color: #fff;
-  font-family:'open sans',
-  sans-serif;
-  font-size: 0.8125em;
-}
-
-.cta button span {
-  color: #fff;
-  font-size: 1.875em;
-  font-family:'open sans',
-  sans-serif;
-  letter-spacing:-1px;
-  font-weight:bold;
-}
-
-.cta button:hover {
-  background: #544F73;
-}
-
-.cta button:active {
-  background-color: #544F73;
-  box-shadow: 0 3px #666;
-  transform: translateY(5px);
-}
 
 /* ==========================================================================
     Portfolio Page styles
@@ -567,25 +569,30 @@ footer .copyright
   display: flex;
   justify-content: center;
   align-items: center; 
-  flex-flow: row wrap;
+  flex-flow: wrap;
   color: #000; 
+}
+
+#contact h2 {
+  border: 5px solid #544F73;
+  padding: 5px;
+  color: #544F73;
+  font-weight: bold;
+}
+
+#contact article {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  }
+
+
+#contact h3 {
+  font-size: 1.25em;
 }
 
 #contact address {
   padding-right: 10px;
-}
-
-#contact article {
-  display: flex; 
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-#contact h2 {
-   border: 5px solid #544F73;
-   padding: 5px;
-   color: #544F73;
-   font-weight: bold;
 }
 
 #contact img {
@@ -765,7 +772,7 @@ div.container {
 /* General Styles Here */
 
 .content-wrapper {
-  max-width: 700px;
+  max-width: 725px;
   margin: 80px 0;
  }
 
@@ -951,17 +958,24 @@ footer .footer-social-icons {
 }
 
 
-
-
 /* ============= Contact Page Tablet Styles =============*/
 
 #contact article {
  display: flex;
- justify-content: center;
- margin: 20px 0;
+ justify-content: space-between;
+ flex-flow: row wrap;
 }
 
-#contact article address,
+
+#contact article div,
+#contact article figure {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+
+#contact article div,
 #contact article figure {
   width: 49%;
 }
