@@ -27,16 +27,6 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
 /*
  * A better looking default horizontal rule
  */
@@ -227,7 +217,7 @@ figure {
 }
 
 #btnScrollToTop:active {
-  background: #bb5759;
+  background: #a299dd;
 }
 
 /* ==================== Base Header - Footer Styles =========================*/
@@ -537,6 +527,17 @@ footer .copyright
   font-weight: bold;
   text-align: center;
 }
+
+.portfolio-gallery h3 a {
+  text-decoration: none;
+  color: #544F73;
+  font-weight: bold;
+}
+
+.portfolio-gallery h3 a:hover {
+  color: #a299dd;
+}
+
 
 #portfolio img {
   width: 100%;
