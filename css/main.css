@@ -145,6 +145,7 @@ p {
 
 figure {
   display: flex;
+  align-items: flex-start;
   margin: 0;
 }
 
@@ -370,10 +371,10 @@ footer .copyright
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 #about figure img {
-  width: 100%;
   border: 3px solid #544F73;
   margin: 20px 0;
   padding: 3px;
@@ -1061,7 +1062,7 @@ h1 {
 
 #about article div,
 #about article figure {
-  width: 42%;
+  width: 47%;
   margin: 0px;
 }
 
